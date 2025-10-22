@@ -1,9 +1,11 @@
 let mySong, fft;
 let color1, color2, color3;
+let asteroid;
 
 function preload() {
     mySong = loadSound('assets/rip_and_tear.mp3');
     buildings = createImg('Buildings.png');
+    asteroid = loadImage('Astroid3.gif');
 }
 
 
@@ -25,10 +27,14 @@ function setup() {
 
 function draw() {
     background(0);
-    buildings.position(10, -30);
+
+    image(asteroid, 0, -30, 1000, 800);
+    buildings.position(10, 70);
+
+
     fill(0,0,0);
-    square(200, 100, 400);
-    square(600, 100, 400);
+    square(200, 200, 400);
+    square(600, 300, 400);
     square(200, 300, 800);
     square(0, 300, 800);
     fill(0, 50);
