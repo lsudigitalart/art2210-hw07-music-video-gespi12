@@ -3,12 +3,12 @@ let color1, color2, color3;
 
 function preload() {
     mySong = loadSound('assets/rip_and_tear.mp3');
-    
+    buildings = createImg('Buildings.png');
 }
 
 
 function setup() {
-    createCanvas(600, 600);
+    createCanvas(1000, 1000);
     fft = new p5.FFT(0.8, 128);
 
     color1 = color(255, 0, 0);
@@ -24,7 +24,13 @@ function setup() {
 }
 
 function draw() {
-    background(220);
+    background(0);
+    buildings.position(10, -30);
+    fill(0,0,0);
+    square(200, 100, 400);
+    square(600, 100, 400);
+    square(200, 300, 800);
+    square(0, 300, 800);
     fill(0, 50);
     rect(0, 0, width, height);
 
