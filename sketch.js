@@ -4,7 +4,7 @@ let asteroid;
 
 function preload() {
     mySong = loadSound('assets/rip_and_tear.mp3');
-    buildings = createImg('Buildings.png');
+    buildings = createImg('Buildings.PNG');
     asteroid = loadImage('Astroid3.gif');
 }
 
